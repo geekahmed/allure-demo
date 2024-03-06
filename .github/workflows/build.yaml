@@ -31,3 +31,10 @@ jobs:
         with:
          name: Package
          path: build/test-results/test 
+      - name: Build Report ALLURE
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+          allure_results: build/allure-results
+          allure_history: allure-history
+          keep_reports: 20
