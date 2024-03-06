@@ -22,6 +22,10 @@ jobs:
         run: ./gradlew test
       - name: List Files for build
         run: ls -a build/
+      - name: List Files for build/reports
+        run: ls -a build/reports
+      - name: List Files for build/test-results
+        run: ls -a build/test-results
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
