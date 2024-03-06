@@ -20,8 +20,8 @@ jobs:
           cache: 'gradle'
       - name: Run tests
         run: ./gradlew test
-      - name: List Files
-        run: ls -a
+      - name: List Files for build
+        run: ls -a build/
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
