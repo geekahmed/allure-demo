@@ -23,7 +23,7 @@ jobs:
       - name: List Files for build
         run: ls -a build/
       - name: List Files for build/reports
-        run: ls -a build/reports/tests
+        run: ls -a build/reports/tests/test
       - name: List Files for build/test-results
         run: ls -a build/test-results/test
       - name: Upload build artifacts
